@@ -367,6 +367,7 @@ jobs:
           CXXSTD: ${{ matrix.cxxstd }}
           CXXSTD_DIALECT: ${{ matrix.cxxstd_dialect }}
           TRAVIS_BRANCH: ${{ github.base_ref }}
+          TRAVIS_OS_NAME: "linux"
         run: |
           echo '==================================> SETUP'
           if [ -n "$GHA_CONTAINER" ]; then
@@ -620,6 +621,7 @@ jobs:
           CXXSTD: ${{ matrix.cxxstd }}
           CXXSTD_DIALECT: ${{ matrix.cxxstd_dialect }}
           TRAVIS_BRANCH: ${{ github.base_ref }}
+          TRAVIS_OS_NAME: "osx"
         run: |
           echo '==================================> SETUP'
           set -ex
