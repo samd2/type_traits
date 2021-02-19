@@ -47,7 +47,7 @@ def main(ctx):
   osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11,1 Job 30", "clang++", packages="", buildtype="boost", buildscript="drone", xcode_version="9.1", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11,14,1z', 'DRONE_JOB_UUID': '22d200f867'}, globalenv=globalenv),
   osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11,1 Job 31", "clang++", packages="", buildtype="boost", buildscript="drone", xcode_version="8.3", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11,14,1z', 'DRONE_JOB_UUID': '632667547e'}, globalenv=globalenv),
   osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11,1 Job 32", "clang++", packages="", buildtype="boost", buildscript="drone", xcode_version="7.3", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11,14,1z', 'DRONE_JOB_UUID': 'cb4e5208b4'}, globalenv=globalenv),
-  ]
+    ]
 
 # from https://github.com/boostorg/boost-ci
 load("@boost_ci//ci/drone/:functions.star", "linux_cxx","windows_cxx","osx_cxx","freebsd_cxx")
